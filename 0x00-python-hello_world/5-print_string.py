@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 str = "Holberton School"
-str2 = 3*str
-print("{}".format(str2))
-print("{:16.9}".format(str))
+print("{}{}{}".format(str, str, str))
+str = str[0:9]
+print("{}".format(str))
