@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-def main(argv):
+from sys import argv
+from calculator_1 import add, sub, mul, div
+
+if __name__ == "__main__":
     args = len(argv)
     ops = {
         '+': calculator_1.add,
