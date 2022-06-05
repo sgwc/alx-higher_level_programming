@@ -5,10 +5,10 @@ from calculator_1 import add, sub, mul, div
 if __name__ == "__main__":
     args = len(argv)
     ops = {
-        '+': calculator_1.add,
-        '-': calculator_1.sub,
-        '*': calculator_1.mul,
-        '/': calculator_1.div
+        '+': add,
+        '-': sub,
+        '*': mul,
+        '/': div
         }
     if args != 4:
         print("Usage: {} <a> <operator> <b>".format(argv[0]))
