@@ -6,8 +6,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
    if len_a == 0:
        a, b = 0, 0
    elif len_a == 1:
-           a = tuple_a[0]
-           b = 0
+      a = tuple_a[0]
+      b = 0
    elif len_a == 2:
        a, b = tuple_a
    else:
@@ -27,4 +27,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
    res_tuple = (a + c, b + d)
    return(res_tuple)
-
