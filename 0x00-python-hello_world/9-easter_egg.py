@@ -12,4 +12,4 @@ than never.\nAlthough never is often better than *right* now.\nIf the \
 implementation is hard to explain, it's a bad idea.\nIf the implementation \
 is easy to explain, it may be a good idea.\nNamespaces are one honking great \
 idea -- let's do more of those!"
-print(str)
+print(f"{str}")
