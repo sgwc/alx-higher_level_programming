@@ -3,7 +3,7 @@ def uniq_add(my_list=[]):
     sum = my_list[0]
     my_list.sort()
     prev = my_list[0]
-    for i in range(1,len(my_list)):
+    for i in range(1, len(my_list)):
         if my_list[i] == prev:
             pass
         else:
