@@ -10,5 +10,5 @@ def only_diff_elements(set_1, set_2):
     for e2 in s2:
         if e2 not in com_el:
             od_set.append(e2)
-    
+
     return od_set
