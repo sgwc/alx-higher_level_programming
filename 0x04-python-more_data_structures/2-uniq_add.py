@@ -9,7 +9,7 @@ def uniq_add(my_list=[]):
                 pass
             else:
                 sum += my_list[i]
-                prev = my_list[i]
-            return sum
+            prev = my_list[i]
+        return sum
     else:
         return 0
