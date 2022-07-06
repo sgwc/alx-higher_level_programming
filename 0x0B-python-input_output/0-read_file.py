@@ -8,4 +8,5 @@ def read_file(filename=""):
     and prints it to the stdout
     """
     with open(filename, encoding="utf-8") as f:
-        print(f.read())
+        for line in f:
+            print(line, end="")
