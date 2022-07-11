@@ -45,9 +45,10 @@ class Rectangle(Base):
             print(" " * self.x + "#" * self.width)
 
     def __str__(self):
-        """ prints """
-        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__, 
-                self.id, self.__x, self.__y, self.__width, self.__height)
+        """print method"""
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.__x, self.__y,
+                                                self.__width, self.__height)
 
     @property
     def width(self):
