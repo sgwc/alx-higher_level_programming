@@ -46,10 +46,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """ prints """
-        return "[{}] ({}) {}/{} - {}/{}".\
-                format(self.__class__.__name__,\
-                    self.id, self.__x, self.__y,\
-                    self.__width, self.__height)
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__, 
+                self.id, self.__x, self.__y, self.__width, self.__height)
 
     @property
     def width(self):
@@ -61,7 +59,7 @@ class Rectangle(Base):
         """width setter method"""
         self.integer_validator('width', value)
         self.__width = value
-    
+
     @property
     def height(self):
         """height setter method"""
@@ -88,6 +86,7 @@ class Rectangle(Base):
     def y(self):
         """y getter method"""
         return self.__y
+
     @y.setter
     def y(self, value):
         """y setter method"""
