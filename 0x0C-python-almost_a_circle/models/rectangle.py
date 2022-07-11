@@ -25,13 +25,18 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update attributes """
-        listme = ['id', 'width', 'height', 'x', 'y']
-        i = 0
-        for arg in args:
-            setattr(self, listme[i], arg)
-            i += 1
+        if args:
+            listme = ['id', 'width', 'height', 'x', 'y']
+            i = 0
+            for arg in args:
+                setattr(self, listme[i], arg)
+                i += 1
+
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def area(self):
         """ computes area of the rectangle """
