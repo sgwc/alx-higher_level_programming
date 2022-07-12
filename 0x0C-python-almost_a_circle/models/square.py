@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Class Square
 """
 
@@ -23,7 +23,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """ print method """
-        return ("[{}] ({}) {}/{} - {}".format(self.__class__.__name__, self.id, self.x, self.y, self.width))
+        return ("[{}] ({}) {}/{} - {}".format(
+            self.__class__.__name__, self.id, self.x, self.y, self.width))
 
     @property
     def size(self):
@@ -32,7 +33,7 @@ class Square(Rectangle):
             size of width and height
         """
         return self.width
-    
+
     @size.setter
     def size(self, value):
         """ width and height setter method
@@ -43,4 +44,3 @@ class Square(Rectangle):
         """
         self.width = value
         self.height = value
-
