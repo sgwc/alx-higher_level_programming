@@ -26,6 +26,11 @@ class Square(Rectangle):
         return ("[{}] ({}) {}/{} - {}".format(
             self.__class__.__name__, self.id, self.x, self.y, self.width))
 
+    def to_dictionary(self):
+        """returns the dictionary rep """
+        return {'id': self.id, 'size': self.size, 'x': self.x,
+                'y': self.y}
+
     @property
     def size(self):
         """width getter method
