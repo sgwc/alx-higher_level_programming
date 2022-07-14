@@ -47,7 +47,7 @@ class Base:
             j = '[]'
         with open(cls.__name__ + '.json', 'w') as f:
             f.write(j)
-    
+
     @staticmethod
     def from_json_string(json_string):
         """json to string static method"""
