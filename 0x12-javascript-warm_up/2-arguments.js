@@ -8,5 +8,5 @@ if (argc === 2) {
 } else if (argc === 3) {
   console.log('Argument found');
 } else {
-  console.log('Argument found');
+  console.log('Arguments found');
 }
