@@ -1,8 +1,7 @@
 #!/usr/bin/node
 
-function fact(n) {
-  if (n == 0 || !n)
-  {
+function fact (n) {
+  if (!n) {
     return 1;
   } else {
     return n * fact(n - 1);
